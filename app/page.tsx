@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -53,17 +54,29 @@ export default function Home() {
           </div>
         </div>
         <div className="container">
-          <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>GYMADAY</h1>
-            <p className={styles.heroTagline}>Why Commit? Just Gym it.</p>
-            <p className={styles.heroDescription}>
-              A revolutionary fitness platform that connects gym enthusiasts with premium 
-              fitness facilities across India. No commitments, no contracts-just flexible 
-              gym access whenever you need it.
-            </p>
-            <div className={styles.heroButtons}>
-              <Link href="/gyms" className="btn">Explore Gyms</Link>
-              <Link href="/about-us" className={`${styles.btnSecondary} btn`}>Learn More</Link>
+          <div className={styles.heroGrid}>
+            <div className={styles.heroContent}>
+              <h1 className={styles.heroTitle}>GYMADAY</h1>
+              <p className={styles.heroTagline}>Why Commit? Just Gym it.</p>
+              <p className={styles.heroDescription}>
+                A revolutionary fitness platform that connects gym enthusiasts with premium 
+                fitness facilities across India. No commitments, no contracts-just flexible 
+                gym access whenever you need it.
+              </p>
+              <div className={styles.heroButtons}>
+                <Link href="/gyms" className="btn">Explore Gyms</Link>
+                <Link href="/about-us" className={`${styles.btnSecondary} btn`}>Learn More</Link>
+              </div>
+            </div>
+            <div className={styles.heroImage}>
+              <Image 
+                src="/thumbnail.png" 
+                alt="Fitness workout" 
+                width={600} 
+                height={600}
+                className={styles.heroImg}
+                priority
+              />
             </div>
           </div>
         </div>
