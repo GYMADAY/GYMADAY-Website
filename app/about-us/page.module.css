@@ -1,0 +1,133 @@
+.about {
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-black) 0%, #1a1a1a 100%);
+  color: var(--color-white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: var(--color-black);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--color-orange);
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-gray-dark);
+  margin-bottom: 1rem;
+}
+
+.missionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.missionItem {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--color-gray-light);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.missionItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 69, 0, 0.2);
+}
+
+.missionItem h3 {
+  font-size: 1.3rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.missionItem p {
+  font-size: 1rem;
+  color: var(--color-gray-dark);
+  line-height: 1.6;
+}
+
+.offerList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.offerList li {
+  padding: 0.8rem 0;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.1rem;
+  color: var(--color-gray-dark);
+  line-height: 1.6;
+}
+
+.offerList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-orange);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.emailLink {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--color-orange);
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+  color: #ff6b35;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .missionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .section p,
+  .offerList li {
+    font-size: 1rem;
+  }
+}
+

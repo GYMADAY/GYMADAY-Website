@@ -1,0 +1,157 @@
+.gyms {
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-black) 0%, #1a1a1a 100%);
+  color: var(--color-white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-orange);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.note {
+  background-color: rgba(255, 69, 0, 0.1);
+  border-left: 4px solid var(--color-orange);
+  padding: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.gymsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.gymCard {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.gymCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 69, 0, 0.2);
+}
+
+.gymHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.gymName {
+  font-size: 1.5rem;
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: var(--color-gray-light);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.gymLocation {
+  color: var(--color-gray-dark);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.facilities {
+  margin-bottom: 1.5rem;
+}
+
+.facilities h3 {
+  font-size: 1rem;
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.facilities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.facilities li {
+  color: var(--color-gray-dark);
+  padding: 0.3rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.facilities li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-orange);
+  font-weight: bold;
+}
+
+.gymFooter {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.comingSoonBtn {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: var(--color-gray-light);
+  color: var(--color-gray-dark);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .gymsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .gymCard {
+    padding: 1.5rem;
+  }
+}
+
