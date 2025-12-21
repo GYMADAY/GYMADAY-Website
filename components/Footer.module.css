@@ -88,19 +88,55 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1.5rem;
+  }
+
   .content {
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .brand {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .brand h3 {
+    font-size: 1.3rem;
   }
 
   .links {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+  }
+
+  .linkGroup {
+    text-align: left;
+  }
+
+  .linkGroup h4 {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .linkGroup a {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
   }
 
   .bottom {
     flex-direction: column;
     text-align: center;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .bottom p {
+    font-size: 0.85rem;
+    margin: 0;
   }
 }
 
