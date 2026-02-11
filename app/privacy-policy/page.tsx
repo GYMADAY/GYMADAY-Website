@@ -87,8 +87,8 @@ export default function PrivacyPolicy() {
             <div className={styles.section}>
               <h2>7. Children&apos;s Privacy</h2>
               <p>
-                Our services are not intended for users under the age of 18. We do not 
-                knowingly collect personal information from children under 18.
+                Our services are not intended for users under the age of 13. We do not 
+                knowingly collect personal information from children under 13.
               </p>
             </div>
 
