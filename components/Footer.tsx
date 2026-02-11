@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import styles from './Footer.module.css'
 
+const partnerFormUrl = process.env.NEXT_PUBLIC_PARTNER_FORM_URL || '/partner'
+const isExternalForm = partnerFormUrl.startsWith('http')
+
 export default function Footer() {
   return (
     <footer className={styles.footer}>
@@ -30,6 +33,23 @@ export default function Footer() {
               <a href="mailto:gymaday.app@gmail.com">gymaday.app@gmail.com</a>
             </div>
           </div>
+        </div>
+
+        <div className={styles.businessCta}>
+          {isExternalForm ? (
+            <a
+              href={partnerFormUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.businessButton}
+            >
+              Do Business With Us
+            </a>
+          ) : (
+            <Link href={partnerFormUrl} className={styles.businessButton}>
+              Do Business With Us
+            </Link>
+          )}
         </div>
 
         <div className={styles.bottom}>

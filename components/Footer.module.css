@@ -60,6 +60,35 @@
   color: var(--color-orange);
 }
 
+.businessCta {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.businessButton {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-orange);
+}
+
+.businessButton:hover {
+  background-color: #e63e00;
+  border-color: #e63e00;
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3);
+}
+
 .bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
