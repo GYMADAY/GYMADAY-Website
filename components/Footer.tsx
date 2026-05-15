@@ -31,7 +31,7 @@ export default function Footer() {
 
             <div className={styles.linkGroup}>
               <h4>Contact</h4>
-              <a href="mailto:gymaday.app@gmail.com">gymaday.app@gmail.com</a>
+              <a href="mailto:info@gymaday.com">info@gymaday.com</a>
             </div>
           </div>
         </div>

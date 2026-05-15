@@ -109,74 +109,59 @@
   margin-bottom: 2rem;
 }
 
-.qrCodes {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.qrCard {
-  align-items: center;
-  background-color: var(--color-white);
-  border: 1px solid #ececec;
-  border-radius: 10px;
-  color: var(--color-black);
+.downloadButtons {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
-  padding: 1rem;
-  text-decoration: none;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  gap: 1rem;
+  align-items: stretch;
 }
 
-.qrCard:hover,
-.qrCard:focus-visible {
-  border-color: var(--color-orange);
-  box-shadow: 0 8px 22px rgba(255, 69, 0, 0.18);
-  outline: none;
-  transform: translateY(-2px);
-}
-
-.qrFrame {
-  background-color: var(--color-white);
-  border: 1px solid #f0f0f0;
-  border-radius: 8px;
-  padding: 0.6rem;
-}
-
-.qrFrame svg {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.qrLabel {
-  align-items: center;
-  color: var(--color-black);
+.downloadButton {
   display: flex;
-  gap: 0.55rem;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.25rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-black);
   justify-content: center;
 }
 
-.qrLabelText {
-  align-items: flex-start;
+.downloadButton:hover {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 69, 0, 0.3);
+}
+
+.downloadButtonText {
   display: flex;
   flex-direction: column;
-  line-height: 1.15;
+  align-items: flex-start;
+  line-height: 1.2;
 }
 
-.qrLabelTop {
-  color: var(--color-gray-dark);
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+.downloadButtonLabel {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.qrLabelStore {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-black);
+.downloadButtonStore {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.appStoreIcon,
+.playStoreIcon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
@@ -197,16 +182,22 @@
     font-size: 0.95rem;
   }
 
-  .qrCodes {
-    grid-template-columns: 1fr;
+  .downloadButton {
+    padding: 0.75rem 1rem;
   }
 
-  .qrFrame {
-    max-width: 200px;
+  .downloadButtonLabel {
+    font-size: 0.65rem;
   }
 
-  .qrLabelStore {
-    font-size: 0.95rem;
+  .downloadButtonStore {
+    font-size: 1rem;
+  }
+
+  .appStoreIcon,
+  .playStoreIcon {
+    width: 24px;
+    height: 24px;
   }
 }
 
