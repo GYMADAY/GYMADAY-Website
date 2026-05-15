@@ -129,7 +129,7 @@ export default function Home() {
               </p>
               <div className={styles.downloadButtonsContainer}>
                 <a 
-                  href="https://apps.apple.com/app/gymaday" 
+                  href="https://apps.apple.com/in/app/gymaday/id6768573496" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={styles.downloadButton}
@@ -143,7 +143,7 @@ export default function Home() {
                   </div>
                 </a>
                 <a 
-                  href="https://play.google.com/store/apps/details?id=com.gymaday" 
+                  href="https://play.google.com/store/apps/details?id=app.gymaday.gymaday" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={styles.downloadButton}
@@ -165,4 +165,3 @@ export default function Home() {
     </div>
   )
 }
-

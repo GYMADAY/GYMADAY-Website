@@ -18,6 +18,7 @@ export default function Footer() {
             <div className={styles.linkGroup}>
               <h4>Quick Links</h4>
               <Link href="/">Home</Link>
+              <Link href="/gym">Gyms</Link>
               <Link href="/about-us">About Us</Link>
               <Link href="/#contact">Contact</Link>
             </div>
@@ -60,4 +61,3 @@ export default function Footer() {
     </footer>
   )
 }
-

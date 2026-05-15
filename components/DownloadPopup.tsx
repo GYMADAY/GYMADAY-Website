@@ -71,7 +71,7 @@ export default function DownloadPopup() {
           
           <div className={styles.downloadButtons}>
             <a 
-              href="https://apps.apple.com/app/gymaday" 
+              href="https://apps.apple.com/in/app/gymaday/id6768573496" 
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.downloadButton}
@@ -86,7 +86,7 @@ export default function DownloadPopup() {
               </div>
             </a>
             <a 
-              href="https://play.google.com/store/apps/details?id=com.gymaday" 
+              href="https://play.google.com/store/apps/details?id=app.gymaday.gymaday" 
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.downloadButton}
@@ -106,4 +106,3 @@ export default function DownloadPopup() {
     </div>
   )
 }
-
